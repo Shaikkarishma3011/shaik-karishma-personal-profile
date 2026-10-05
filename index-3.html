@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal portfolio website of Shaik Karishma, an aspiring AI/ML developer.">
+<title>Shaik Karishma | Aspiring AI/ML Developer</title>
+<style>
+:root{
+  --bg:#f7f9fc;--surface:#ffffff;--text:#172033;--muted:#64748b;
+  --primary:#5b4cf0;--secondary:#00a8a8;--border:#e5e7eb;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:800;color:var(--primary)}
+nav a{color:var(--text);text-decoration:none;margin-left:22px;font-weight:600;font-size:14px}
+.hero{max-width:1100px;margin:auto;padding:95px 22px 80px;display:grid;grid-template-columns:1.35fr .65fr;gap:45px;align-items:center}
+.badge{display:inline-block;background:#eeecff;color:var(--primary);padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.03;letter-spacing:-2px;margin-bottom:18px}
+.hero h2{font-size:25px;color:var(--primary);margin-bottom:15px}
+.hero p{max-width:650px;color:var(--muted);font-size:18px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;border:1px solid var(--border)}
+.btn.primary{background:var(--primary);color:white;border-color:var(--primary)}
+.btn.light{background:white;color:var(--text)}
+.profile-card{background:linear-gradient(145deg,#5b4cf0,#00a8a8);padding:2px;border-radius:28px;box-shadow:0 20px 60px rgba(36,40,100,.15)}
+.profile-inner{background:white;border-radius:26px;padding:38px;text-align:center}
+.avatar{width:130px;height:130px;margin:0 auto 20px;border-radius:50%;display:grid;place-items:center;background:#eeecff;color:var(--primary);font-size:42px;font-weight:800}
+.profile-inner h3{font-size:24px}.profile-inner p{color:var(--muted);margin-top:6px}
+section{max-width:1100px;margin:auto;padding:80px 22px}
+.section-title{font-size:36px;margin-bottom:12px}
+.section-sub{color:var(--muted);max-width:700px;margin-bottom:32px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(15,23,42,.04)}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{padding:10px 15px;background:#f0f1ff;border:1px solid #dedbff;border-radius:10px;font-weight:700;color:#4036b6}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.project-card h3{font-size:22px;margin-bottom:10px}.project-card p{color:var(--muted)}
+.project-tag{display:inline-block;color:var(--secondary);font-weight:800;font-size:13px;margin-bottom:10px}
+.education{display:flex;gap:20px;align-items:flex-start}
+.edu-icon{min-width:48px;height:48px;border-radius:12px;background:#eeecff;color:var(--primary);display:grid;place-items:center;font-weight:900}
+.contact-box{text-align:center;background:linear-gradient(135deg,#151a36,#272b55);color:white;border-radius:24px;padding:50px 25px}
+.contact-box p{color:#d7dbef;max-width:650px;margin:10px auto 24px}
+.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.contact-links a{color:white;border:1px solid #555b86;padding:11px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:14px}
+@media(max-width:760px){
+  .nav-inner{padding:14px 16px}nav a{margin-left:10px;font-size:12px}
+  .hero{grid-template-columns:1fr;padding-top:65px}
+  .about,.projects{grid-template-columns:1fr}
+  section{padding:60px 18px}
+  h1{letter-spacing:-1px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="logo">SK.</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <span class="badge">CSE (AI &amp; ML) • 3rd Year</span>
+    <h1>Shaik Karishma</h1>
+    <h2>Aspiring AI/ML Developer</h2>
+    <p>I am a Computer Science student passionate about Artificial Intelligence, Machine Learning and software development. I enjoy learning new technologies and building practical projects.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View My Projects</a>
+      <a class="btn light" href="#contact">Contact Me</a>
+    </div>
+  </div>
+  <div class="profile-card">
+    <div class="profile-inner">
+      <div class="avatar">SK</div>
+      <h3>AI &amp; ML Enthusiast</h3>
+      <p>Learning • Building • Improving</p>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-sub">A short introduction about my academic journey and interests.</p>
+  <div class="about">
+    <div class="card">
+      <p>I am a 3rd-year B.Tech student specializing in Computer Science and Engineering (Artificial Intelligence &amp; Machine Learning) at Rajeev Gandhi Memorial College of Engineering and Technology (RGMCET).</p>
+      <br>
+      <p>I am interested in AI/ML, software development and practical technology projects. I am continuously improving my programming and problem-solving skills.</p>
+    </div>
+    <div class="card education">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <h3>B.Tech – CSE (AI &amp; ML)</h3>
+        <p>Rajeev Gandhi Memorial College of Engineering and Technology (RGMCET)</p>
+        <p style="color:#64748b;margin-top:5px">2024 – 2028</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <p class="section-sub">Technologies and concepts I am learning and working with.</p>
+  <div class="card">
+    <div class="skills">
+      <span class="skill">Python</span><span class="skill">Java</span>
+      <span class="skill">Machine Learning</span><span class="skill">Artificial Intelligence</span>
+      <span class="skill">SQL</span><span class="skill">DBMS</span>
+      <span class="skill">HTML &amp; CSS</span><span class="skill">Git &amp; GitHub</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <p class="section-sub">Academic and practical projects that showcase my learning.</p>
+  <div class="projects">
+    <div class="card project-card">
+      <span class="project-tag">JAVA PROJECT</span>
+      <h3>Lab Maintenance Schedule</h3>
+      <p>A Java-based project for managing laboratory maintenance schedules and maintaining maintenance records in an organized way.</p>
+    </div>
+    <div class="card project-card">
+      <span class="project-tag">MACHINE LEARNING PROJECT</span>
+      <h3>Renal Guard</h3>
+      <p>An intelligent machine learning project focused on early detection of Chronic Kidney Disease using data-driven techniques.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <h2 class="section-title">Let's Connect</h2>
+    <p>Interested in AI/ML, software development or collaboration? Feel free to connect with me.</p>
+    <div class="contact-links">
+      <a href="mailto:your-email@example.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/shaik-karishma-a547253a1" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Shaik Karishma • Personal Profile Website</footer>
+</body>
+</html>
